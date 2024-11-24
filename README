@@ -1,0 +1,94 @@
+gGame Overview
+Welcome to the Virtual Farm Game, where you manage a digital farm and earn money by raising animals and selling their produce. The goal is to balance resources, grow your farm, and maximize your profits.
+
+How to Play:
+    Game Setup
+        Starting resources:
+        Money: 1000
+        Maximum capacity: 84 (sum of animal values)
+
+Animal Types:
+        Chicken (1 unit of eggs/day):
+        Price: 100
+        Value: 12
+        Cow 1 (3 units of milk/day):
+        Price: 300
+        Value: 21
+        Cow 2 (5 units of milk/day):
+        Price: 300
+        Value: 28
+
+
+Animal Stats:
+
+    Hunger: Animals require food to stay alive. Hunger increases daily. At 5 hunger, the animal dies.
+    Thirst: Animals require water daily. At 5 thirst, the animal dies.
+    Production:
+    Chickens produce eggs.
+    Cows produce milk.
+    Dead animals do not produce resources and are automatically removed after 3 seconds.
+
+
+Daily Actions:
+
+    Feed All: Reduce hunger for all animals.
+    Water All: Reduce thirst for all animals.
+    Buying and Selling
+
+Buy Animals: Purchase animals if you have enough money and space.
+Sell Produce: Sell eggs (10 each) and milk (20 each) for profit.
+
+
+
+Game Features:
+
+    Dynamic Gameplay
+
+    Animals have unique attributes (price, produce, and maintenance).
+Make strategic decisions about purchases and sales.
+Resource Management
+
+    Track your resources: eggs, milk, and money.
+    Manage animal hunger and thirst daily to keep them productive.
+Real-Time Updates
+
+    Time passes in intervals of 2 seconds, simulating daily farm life.
+    
+    Actions affect the farm's state dynamically.
+
+
+Controls
+    Buttons
+        Buy Chicken: Add a chicken to your farm for 100.
+        Buy Cow: Add a cow to your farm for 300.
+        Feed All: Feed all animals to reduce hunger by 1.
+        Water All: Water all animals to reduce thirst by 1.
+        Sell Items: Sell all eggs and milk for cash.
+
+
+Animal Interaction
+    Click on an animal to remove it from the farm.
+    Removed animals return 50% of their purchase cost.
+    How to Run the Game
+
+
+Requirements
+    A modern web browser supporting JavaScript and DOM manipulation.
+    Ensure all assets (e.g., cow_1.png, cow_2.png, chicken_1.png) are in the correct relative path.
+
+
+Steps to Play
+
+    Open the HTML file in your browser.
+    Start managing your farm!
+    Key Strategies
+    Balance buying animals and selling produce to maintain resources.
+    Keep animals alive by feeding and watering them regularly.
+    Maximize your farm’s productivity by managing space efficiently.
+    Future Enhancements
+    Add more animal types with unique behaviors.
+    Implement weather conditions affecting production.
+    Introduce breeding mechanics to grow the farm organically.
+
+
+Enjoy your time as a virtual farmer! 🌾
