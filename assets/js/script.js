@@ -176,6 +176,7 @@ function addAnimalToContainer(animal) {
   const animals_container = document.querySelector(".animals_container");
   const element_div = document.createElement("div");
   element_div.setAttribute("id", animal.id);
+  element_div.classList.add("animal");
   element_div.addEventListener("click", (e) => {
     remove_animal(animal);
     console.log(animals);
@@ -199,11 +200,18 @@ function setDaysLength() {
       console.log("current value:", current_value);
       console.log("daily eggs: ", daily_eggs_current);
       console.log("daily milk: ", daily_milk_current);
+
     });
     add_milk_and_eggs();
   }, 2000);
 }
 function add_milk_and_eggs() {
+  if (daily_eggs_current<0) {
+    daily_eggs_current = 0;
+  }
+  if (daily_milk_current<0) {
+    daily_milk_current = 0;
+  }
   egg_amount.textContent =
   parseInt(egg_amount.textContent) + daily_eggs_current;
   milk_amount.textContent =
@@ -223,6 +231,7 @@ function remove_animal(animal) {
 function dying_animal(animal) {
   const animal_div = document.querySelector("#" + CSS.escape(animal.id));
   animal_div.classList.add("dead");
+  animal_div.classList.remove("animal")
   animal.subtract();
   setTimeout(()=>remove_animal(animal),3000)
 }

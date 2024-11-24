@@ -45,6 +45,31 @@ body {
 }
 
 
+.animal {
+  display: inline-block;
+  position: relative;
+  animation: small-motion 3s ease-in-out infinite; /* Apply the small motion animation */
+}
+
+/* Keyframes for small motions */
+@keyframes small-motion {
+  0% {
+    transform: translateY(0) rotate(0deg); /* Initial state */
+  }
+  25% {
+    transform: translateY(-2px) rotate(1deg); /* Small upward and slight rotation */
+  }
+  50% {
+    transform: translateY(2px) rotate(-1deg); /* Small downward and slight rotation */
+  }
+  75% {
+    transform: translateY(-1px) rotate(0deg); /* Small upward motion */
+  }
+  100% {
+    transform: translateY(0) rotate(0deg); /* End state */
+  }
+}
+
 .animals_container {
   display: flex;
   top: 67%;
