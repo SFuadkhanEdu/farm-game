@@ -53,7 +53,6 @@ body {
   position: absolute;
   height: 84px;
   width: 415px;
-  border: 1px solid black;
 }
 .days_counter,.money_div {
   font-size: 40px;
